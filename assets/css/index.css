@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: black;
+}
+
+.space {
+    position: relative;
+    width: 142vmin;
+    height: 100vmin;
+    margin: auto;
+
+    background-image: url('/assets/images/space.png');
+    background-size: cover;
+}
+
+.planet-area {
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+
+.planet {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+
+    z-index: 3;
+}
+
+.rocket {
+    position: absolute;
+    right: 20%;
+    bottom: 25%;
+    width: 35%;
+
+    transform: rotate(30deg);
+
+    z-index: 2;
+}
