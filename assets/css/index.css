@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -44,4 +45,61 @@ body {
     transform: rotate(30deg);
 
     z-index: 2;
+}
+
+.control-panel {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 30%;
+    min-width: 270px;
+
+    padding: 16px;
+    border-radius: 5px;
+    background-color: #2F393A;
+}
+
+.unlock__input {
+    height: 36px;
+    width: 70%;
+}
+
+.unlock__button {
+    height: 36px;
+    width: 25%;
+}
+
+.check-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    padding-top: 16px;
+}
+
+.levers {
+    display: flex;
+
+    width: 100%;
+    padding-top: 16px;
+}
+
+.levers input {
+    -webkit-appearance: slider-vertical;
+    writing-mode: bt-lr;
+    width: 100%;
+    height: 100px;
+}
+
+.launch {
+    display: block;
+    margin: auto;
+    margin-top: 16px;
+    padding: 8px;
+
+    color: red;
+    text-shadow: black 3px 3px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    background-image: repeating-linear-gradient(-45deg, yellow, yellow 10px, black 10px, black 20px);
 }
