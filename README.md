@@ -1,27 +1,30 @@
 *JetBrains Academy*
 # Project 4: Open Space
 
-## Stage 2/5: Launchpad
+## Stage 3/5: One small step for man...
 
 ## Description
-Well done: the setup looks fantastic! Now, it's time to build the control deck for our rocket.
+You have a control deck, but it looks a bit simplistic, so let's work on the looks!
 
-We suggest taking some safety precautions, specifically, make a control panel that is protected by a password. The panel should contain two blocks of controllers and a big launch button. In this project, the controllers won't actually change the trajectory of the rocket, but after completing all the stages, you can easily customize the function of these controls if you wish.
+You are free to start from one of the two separate parts of the stage: customizing the input elements or creating a border for the panel.
 
-Let's start by implementing the HTML part according to the suggested scheme:
+To create a multicolor border, we wrapped all the content of the control-panel element just like in the scheme below and set the gradient background to the outer element:
 
-![Structure2](https://user-images.githubusercontent.com/31639106/119217207-d4d52800-bb02-11eb-955f-c80f1e9744af.png)
+![Structure3](https://user-images.githubusercontent.com/31639106/119249403-8dae6c00-bbc2-11eb-8797-5f2f8a5fe724.png)
 
-Note that each element with a border is \<input/\>. Also, remember that there are several different types of inputs: your choice should be based on the resulting page example we provided below.
+There is just so much to do when it comes to decorating: you can create a whole variety of visual effects by setting gradients; if you are interested, check out Lea Verou's patterns gallery. We decided to make a simple warning border, but you can implement a different theme.
 
-Position your panel and set the background color: it can be any color you like.
+It's important for a web developer to know how to customize standard HTML elements: you don't want to create something that looks like a website from the very first days of the Internet. Customize the password field, the password submission button, and the rocket launch button.
 
-Now, position the elements for the rocket engine management. Use your expertise and experience from the first stage to make the ranges vertical. Put the elements in place by setting the flex property.
+For testing purposes, we listed several crucial points in the objectives, but you can add whatever you want, for example, change the font or the text color, set a border, etc.
+
+Last but not least, don't forget to set the margins to make your panel nice and neat.
 
 ## Objectives
-1. Implement the given scheme using the appropriate types of input fields.
-1. Set the background to the panel.
-1. Inputs in the sections "check-buttons" and "levers" should be positioned.
-1. Each lever should be vertical.
+1. Move the contents of the element with the class control-panel to a new element with the class control-panel__inner.
+2. Set a gradient background to the control panel.
+3. Change the text and the border of the password field.
+4. Change the background color of the "ok" and "launch" buttons.
+5. Change the shape of the "launch" button.
 
-![Stage2](https://user-images.githubusercontent.com/31639106/119217189-ad7e5b00-bb02-11eb-8b78-2dc474225a05.png)
+![Stage3](https://user-images.githubusercontent.com/31639106/119249436-c6e6dc00-bbc2-11eb-8fcc-61365cd4ed00.png)
