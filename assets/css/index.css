@@ -47,6 +47,19 @@ body {
     z-index: 2;
 }
 
+.rocket-animation {
+    transform-box: border-box;
+    animation: rocketLaunch 3s ease-in forwards;
+}
+
+@keyframes rocketLaunch {
+    to {
+        transform: translate(50vh, -100vh) rotate(30deg);
+    }
+}
+
+/* Control panel section */
+
 .control-panel {
     position: absolute;
     right: 20px;
@@ -115,10 +128,9 @@ body {
     width: 120px;
     height: 120px;
     
-    color: red;
-    text-shadow: black 3px 3px;
+    color: white;
     font-weight: 900;
     font-size: 1.5rem;
-    background-image: repeating-linear-gradient(-45deg, yellow, yellow 10px, black 10px, black 20px);
+    background-color: red;
     border-radius: 50%;
 }
